@@ -8,4 +8,19 @@ class Carro extends Veiculo
         parent::__construct($marca, $modelo, $ano);
         $this->quantidadePortas = $quantidadePortas;
     }
+
+    public function calcularDiaria(): float
+    {
+        return 150;
+    }
+
+    public function getQuantidadePortas(): int
+    {
+        return $this->quantidadePortas;
+    }
+
+    public function setQuantidadePortas(int $quantidadePortas): void
+    {
+        $this->quantidadePortas = $quantidadePortas;
+    }
 }
