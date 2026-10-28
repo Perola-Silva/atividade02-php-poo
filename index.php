@@ -12,6 +12,9 @@ $moto = new Moto('Honda', 'CG 160 Titan', 2023, 160);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de veículos</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>

@@ -3,16 +3,16 @@
 }
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f1f5f3;
-  color: #24332d;
+  font-family: "Sour Gummy", sans-serif;
+  background: #fff8fa;
+  color: #4a353c;
   line-height: 1.5;
 }
 .cabecalho {
   padding: 32px 20px;
   text-align: center;
-  color: #ffffff;
-  background: #176b55;
+  color: #592537;
+  background: #ffb6c1;
 }
 .cabecalho h1 {
   margin: 0 0 8px;
@@ -35,20 +35,20 @@ body {
   flex: 1 1 280px;
   padding: 24px;
   background: #ffffff;
-  border: 1px solid #d4e2dc;
+  border: 1px solid #ffd6e0;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgb(20 60 45 / 8%);
+  box-shadow: 0 4px 12px rgb(255, 182, 193, 0.15);
 }
 .cartao h2 {
   margin-top: 0;
-  color: #176b55;
+  color: #d16b81;
 }
 .tipo {
   display: inline-block;
   margin-bottom: 12px;
   padding: 4px 10px;
-  color: #15533f;
-  background: #d9f2e7;
+  color: #7d3546;
+  background: #ffe4e9;
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: bold;
@@ -59,14 +59,14 @@ body {
 .preco {
   margin-top: 20px;
   padding-top: 16px;
-  border-top: 1px solid #d4e2dc;
+  border-top: 1px solid #ffd6e0;
   font-size: 1.2rem;
   font-weight: bold;
 }
 .rodape {
   padding: 20px;
   text-align: center;
-  color: #52665d;
+  color: #8c6b75;
   font-size: 0.9rem;
 }
 @media (max-width: 800px) {
