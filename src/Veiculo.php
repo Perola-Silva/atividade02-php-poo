@@ -5,6 +5,16 @@ abstract class Veiculo
     private string $modelo;
     private int $ano;
 
+    // construtor
+
+    public function __construct(string $marca, string $modelo, int $ano)
+    {
+        $this->marca = $marca;
+        $this->modelo = $modelo;
+        $this->setAno($ano);
+    }
+
+    // getters
     public function getMarca(): string
     {
         return $this->marca;
@@ -20,6 +30,7 @@ abstract class Veiculo
         return $this->ano;
     }
 
+    // setters
     public function setMarca(string $marca): void
     {
         $this->marca = $marca;
@@ -32,6 +43,8 @@ abstract class Veiculo
 
     public function setAno(int $ano): void
     {
-        $this->ano = $ano;
+        if($ano > 0){
+            $this->ano = $ano;
+        }
     }
 }
