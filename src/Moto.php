@@ -8,4 +8,19 @@ class Moto extends Veiculo
         parent::__construct($marca, $modelo, $ano);
         $this->cilindradas = $cilindradas;
     }
+
+    public function calcularDiaria(): float
+    {
+        return 70;
+    }
+
+    public function getCilindradas(): int
+    {
+        return $this->cilindradas;
+    }
+
+    public function setCilindradas(int $cilindradas): void
+    {
+        $this->cilindradas = $cilindradas;
+    }
 }
