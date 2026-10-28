@@ -1,6 +1,10 @@
 <?php
-// Carregue as classes usando require_once.
-// Crie um objeto Carro e um objeto Moto com os dados indicados no enunciado.
+require_once "src/Veiculo.php";
+require_once "src/Carro.php";
+require_once "src/Moto.php";
+
+$carro = new Carro('Chevrolet', 'Onix', 2023, 4);
+$moto = new Moto('Honda', 'CG 160 Titan', 2023, 160);
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -22,37 +26,37 @@
                 <span class="tipo">Carro</span>
                 
                 <h2>
-                    <!-- Exiba marca e modelo do carro -->
+                    <?= $carro->getMarca() ?> <?= $carro->getModelo() ?>
                 </h2>
                 
                 <p class="detalhe">
-                    Ano: <!-- Exiba o ano -->
+                    Ano: <?= $carro->getAno() ?>
                 </p>
                 
                 <p class="detalhe">
-                    Portas: <!-- Exiba a quantidade de portas -->
+                    Portas: <?= $carro->getQuantidadePortas() ?>
                 </p>
                 
                 <p class="preco">
-                    Diária: R$ <!-- Exiba a diária formatada com duas casas decimais -->
+                    Diária: R$ <?= number_format($carro->calcularDiaria(), 2, ',', '.') ?>
                 </p>
             </article>
 
             <article class="cartao">
                 <span class="tipo">Moto</span>
                 <h2>
-                    <!-- Exiba marca e modelo da moto -->
+                    <?= $moto->getMarca() ?> <?= $moto->getModelo() ?>
                 </h2>
 
                 <p class="detalhe">
-                    Ano: <!-- Exiba o ano -->
+                    Ano: <?= $moto->getAno() ?>
                 </p>
                 
                 <p class="detalhe">
-                    Cilindradas: <!-- Exiba as cilindradas -->
+                    Cilindradas: <?= $moto->getCilindradas() ?>
                 </p>
                 <p class="preco">
-                    Diária: R$ <!-- Exiba a diária formatada com duas casas decimais -->
+                    Diária: R$ <?= number_format($moto->calcularDiaria(), 2, ',', '.') ?>
                 </p>
             </article>
         </section>
