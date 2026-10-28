@@ -1,1 +1,11 @@
 <?php 
+class Moto extends Veiculo
+{
+    private int $cilindradas;
+
+    public function __construct(string $marca, string $modelo, int $ano, int $cilindradas)
+    {
+        parent::__construct($marca, $modelo, $ano);
+        $this->cilindradas = $cilindradas;
+    }
+}
